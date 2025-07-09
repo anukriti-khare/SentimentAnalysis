@@ -1,5 +1,10 @@
-This project focuses on building a high-performance sentiment analysis model using a large-scale Twitter dataset containing 1.6 million tweets labeled as either positive or negative. The goal was to preprocess real-world social media text data and classify tweet sentiments using traditional machine learning techniques. The dataset underwent rigorous cleaning including stopword removal, lemmatization, and lowercasing. Features were extracted using the TF-IDF vectorization method, incorporating both unigrams and bigrams for richer representation.
+This project presents a complete end-to-end sentiment analysis pipeline built on a dataset of 1.6 million labeled tweets. The goal is to classify tweets as either **positive** or **negative** using classical machine learning techniques. The dataset underwent thorough preprocessing including lowercasing, URL and punctuation removal, stopword filtering, and lemmatization to clean noisy social media text.
 
-After feature extraction, multiple machine learning models were trained and evaluated, including Logistic Regression, Multinomial Naive Bayes, and Linear SVM, using stratified train-test splitting. Among the models, Logistic Regression with TF-IDF bigrams performed the best, achieving an accuracy of 79.4%. Detailed evaluation using confusion matrices and classification reports is included for comparison.
+For feature extraction, **TF-IDF Vectorization with unigrams and bigrams**, was used followed by training and evaluating three different models, **Logistic Regression**, **Multinomial Naive Bayes**, and **Linear SVM**. Among these, Logistic Regression performed the best with an accuracy of approximately **79.5%** on the validation set.
 
-To make the project more interactive and accessible, a Streamlit web application was developed that allows users to input any text and get real-time sentiment predictions. The app is lightweight, fast, and replicates the final model's behavior. This project demonstrates end-to-end implementation — from preprocessing and modeling to evaluation and deployment — using interpretable and scalable ML tools.
+The project includes extensive exploratory analysis, visualization of word frequencies, bigrams, and tweet length distributions, as well as comparative performance metrics such as accuracy, classification reports, and confusion matrices for each model.
+
+To make this project interactive and user-friendly, a **Streamlit web application** was developed where users can input custom tweet text and choose a model to predict sentiment in real-time. The app supports displaying predicted sentiment along with the model’s confidence.
+
+**App Link:** https://huggingface.co/spaces/anukriti-khare/Sentiment-Analysis
+
